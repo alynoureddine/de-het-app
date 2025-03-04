@@ -1,0 +1,44 @@
+<div
+  class="card"
+  [ngClass]="{ flipped: isFlipped }"
+  (click)="isFlipped = !isFlipped"
+>
+  <div class="content">
+    <div class="front">
+      <mat-card
+        *ngIf="words.length > 0"
+        [ngClass]="{ 'wrong-answer': showWrong, 'correct-answer': showCorrect }"
+      >
+        <mat-card-header>
+          <mat-card-title>{{ displayedWord?.name }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-actions>
+          <button
+            mat-button
+            (click)="$event.stopPropagation(); submitAnswer('de')"
+            [disabled]="showCorrect || showWrong"
+          >
+            De
+          </button>
+          <button
+            mat-button
+            (click)="$event.stopPropagation(); submitAnswer('het')"
+            [disabled]="showCorrect || showWrong"
+          >
+            Het
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <div class="back">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>{{ displayedWord?.translation }}</mat-card-title>
+        </mat-card-header>
+        <br />
+      </mat-card>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
