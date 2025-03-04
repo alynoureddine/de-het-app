@@ -1,27 +1,49 @@
-# DeHetApp
+# De-Het App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.5.
+A simple and interactive app to help learners practice Dutch noun genders by choosing between **de** or **het** articles.
 
-## Development server
+## Features
+- Displays a Dutch word on a card.
+- User selects **de** or **het**.
+  - **Correct choice:** Green feedback, moves to the next word.
+  - **Incorrect choice:** Red feedback, moves to the next word.
+- The correct article (**de** or **het**) is read aloud to reinforce learning.
+- Click on the card to flip it and reveal the English translation.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/alynoureddine/de-het-app.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd de-het-app
+   ```
+3. Install dependencies (if applicable):
+   ```sh
+   npm install  # or yarn install
+   ```
+4. Start the application:
+   ```sh
+   npm start  # or yarn start
+   ```
 
-## Code scaffolding
+## Usage
+1. Launch the app.
+2. A Dutch word appears on the screen.
+3. Click **de** or **het**.
+4. The app provides feedback and moves to the next word.
+5. Listen to the correct article to reinforce memory.
+6. Click the card to reveal the English translation.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Contributing
+Contributions are welcome! Feel free to submit issues or pull requests to improve the app.
 
-## Build
+## License
+This project is licensed under the [MIT License](LICENSE).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Acknowledgments
+- Inspired by the challenge of learning Dutch noun genders.
+- Built to make memorization easier through repetition and audio reinforcement.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Happy learning! 🎉
